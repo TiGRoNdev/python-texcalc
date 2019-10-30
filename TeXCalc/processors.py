@@ -37,7 +37,7 @@ class ProcessorMetaclass(type):
                 if not custom_name:
                     raise TeXCalcException.CustomFunctionError.NotFoundName()
 
-                if isinstance(pattern, re.Pattern):
+                if not isinstance(pattern, str):
                     pattern = pattern.pattern
 
                 pattern = pattern.replace("<name>", custom_name)
