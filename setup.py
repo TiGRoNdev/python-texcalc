@@ -47,7 +47,7 @@ def read(filename, encoding="utf-8"):
 setup(
     name='texcalc',
     description="Math calculations on LaTeX strings in pure Python.",
-    long_description=read("README.rst"),
+    long_description=read("README.md"),
     license='MIT',
     version=read("VERSION.txt"),
     platforms='all',
